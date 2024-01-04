@@ -1,19 +1,19 @@
 return {
     "hrsh7th/nvim-cmp",
-    Event = "InsertEnter",
+    event = "InsertEnter",
 
     dependencies = {
         {
-            "L3MON4D3/LuaSnip", -- snippet engine
+            'L3MON4D3/LuaSnip', -- snippet engine
             dependencies = "rafamadriz/friendly-snippets", -- useful snippets
             opts = { history = true, updateevents = "TextChanged,TextChangedI" },
         },
 
-        "onsails/lspkind.nvim",
-        "lukas-reineke/cmp-under-comparator",
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-nvim-lsp",
+        'onsails/lspkind.nvim',
+        'lukas-reineke/cmp-under-comparator',
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-path',
+        'hrsh7th/cmp-nvim-lsp',
     },
 
     config = function()
