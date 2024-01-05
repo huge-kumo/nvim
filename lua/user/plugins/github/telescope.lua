@@ -42,6 +42,13 @@ return {
         keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", {desc = "Find string under cursor in cwd"})
         keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", {desc = "Fuzzy find buffers"})
 
+
+        keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<cr>", {desc = "show lsp definition"})
+        keymap.set("n", "gR", "<cmd>Telescope lsp_references<cr>", {desc = "show definition, references"})
+        keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", {desc = "show lsp implementation"})
+        keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", {desc = "show lsp type definition"})
+        keymap.set("n", "gs", "<cmd>Telescope lsp_document_symbols<cr>", {desc = "show document symbols"})
+        keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<cr>", {desc = "show diagnostics for file"})
     end
 
 }
