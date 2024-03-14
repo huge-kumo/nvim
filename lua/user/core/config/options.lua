@@ -12,6 +12,7 @@ local options = {
 	ignorecase = true,
 	inccommand = 'nosplit',
 	termguicolors = true,
+    linebreak  = true,
 }
 
 for key, value in pairs(options) do

@@ -24,14 +24,19 @@ return {
             side = "left",
 
         },
-      git = {
-        enable = false,
-      },
+        git = {
+            enable = true,
+        },
+        filters = {
+            dotfiles = true,
+            exclude = {".gitignore", ".gitmodules"},
+        },
     })
 
     local keymap = vim.keymap
     keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<cr>") -- toggle the explorer
-    keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<cr>") -- find the file in explorer
+    keymap.set("n", "<leader>et", "<cmd>NvimTreeFindFileToggle<cr>") -- find the file in explorer
+    keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFile<cr>") -- find the file in explorer
     keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<cr>") -- refresh the explorer
   end
 }
